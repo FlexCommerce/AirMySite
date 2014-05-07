@@ -1,0 +1,69 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="bk-header clearfix">
+    <div class="wrapper clearfix menu-sz">
+        <nav class="sz-nav">
+          {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </nav>
+    </div>
+    <div class="logo-wrap clearfix">
+         <div class="wrapper clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}      
+        </div>
+    </div>
+</header>
+<section>
+  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile","defaultBgImg": asset('images/main.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
+</section>
+<div class="main wrapper clearfix">
+    <section class="homemaintext-sz">
+        {{widget('content', 'maintextheader', {"content":"<h2>Lorem ipsum dolor?</h2>"})|raw}}
+        {{widget('content', 'maintextcontent', {"content":"<h3>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum.</h3>"})|raw}}
+    </section>
+    <section>
+        <div class="wrapper clearfix">
+            {{widget('content', 'maintextheader', {"content":"<h3>Dapibus, mauris nec malesuada</h3>"})|raw}}
+            <div class="widget responsivecolumns columns-two-50-50">
+                <div class="column columns-two-left">                    
+                    {{widget('content', 'left-content', {"content":"<p>Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus</p>"})|raw}}
+                    {{widget('button', 'left-button2', {text:'show more &raquo;', 'align':'widget-align-right'})|raw}}
+                </div>
+                <div class="column columns-two-right">
+                    {{widget('content', 'right-content', {"content":"<p>Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus</p>"})|raw}}
+                    {{widget('button', 'right-button2', {text:'show more &raquo;', 'align':'widget-align-right'})|raw}}
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="listintext-sz">
+        {{widget('content', 'listintextheader', {"content":"<h2>Who we are?</h2>"})|raw}}
+        {{widget('content', 'listintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+    </section> 
+    {{zone('main')|raw}}
+</div>
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="widget responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'contactformheader', {"content":"<h1>Contact</h1>"})|raw}}
+                {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('contactform', 'contactform', {'text': 'Send &raquo;','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
+                {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
+                {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
+            </div>            
+        </div>            
+    </div>
+</footer>
+<section>
+  <div class="copy-sz">
+    <div class="wrapper clearfix f-socialicons">
+        {{widget('profile', 'f-socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+  </div>
+</section>
+{% endblock %}
