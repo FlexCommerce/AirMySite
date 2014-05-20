@@ -19,7 +19,7 @@
 </section>
 <div class="main wrapper clearfix">
     <section class="homemaintext-sz">
-        {{widget('content', 'maintextheader', {"content":"<h2>Lorem ipsum dolor?</h2>"})|raw}}
+        {{widget('content', 'maintextheader', {"content":"<h1>Lorem ipsum dolor?</h1>"})|raw}}
         {{widget('content', 'maintextcontent', {"content":"<h3>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend. Aliquam erat ac ipsum.</h3>"})|raw}}
     </section>
     <section>
@@ -46,12 +46,12 @@
 <footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="widget responsivecolumns columns-two-50-50">
-            <div class="column columns-two-left">
+            <div class="column columns-two-left sz-foot-left">
                 {{widget('content', 'contactformheader', {"content":"<h1>Contact</h1>"})|raw}}
                 {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
                 {{widget('contactform', 'contactform', {'text': 'Send &raquo;','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
             </div>
-            <div class="column columns-two-right">
+            <div class="column columns-two-right sz-foot-right">
                 {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
                 {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
                 {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
