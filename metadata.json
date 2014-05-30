@@ -3,7 +3,9 @@
 	"thumbnail":"airmysite.png",
 	"screenshot":"airmysite.png",
     "tags": {
-        "en": ["Business", "Trade", "company", "business", "corporate", "finance", "financial", "firm", "money", "simple"]        
+    "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
@@ -66,7 +68,9 @@
             "line-height": "26px",
             "color": "@color-swatch4",
             "color-hover": "@color-swatch7",
-            "letter-spacing": "inherit"
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
         },
         "font7": {
             "font-family": "\"Roboto\", Geneva, Tahoma, sans-serif",
