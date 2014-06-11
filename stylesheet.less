@@ -31,7 +31,6 @@ pre{
 .main {
   padding: 40px 0;
 }
-.main h1, .main h2, .main h3, .main h4{text-align: center;}
 body.edit .widget.navigation, body.edit .widget.extendednavigation {
  overflow: visible;
 }
@@ -230,12 +229,15 @@ header.bk-header {
   display: inline-block;
   margin: 10px auto;
 }
-
+.logo-wrap{
+  border-bottom: 1px solid #d4d0c5;
+}
 /* ===============================
    FOOTER
    =============================== */
 .copy-sz{
   background-color: @color-swatch6;
+  padding: 1em 0;
 }
 .copy-sz #f-socialicons{
   float: right;
@@ -425,7 +427,6 @@ footer.bk-footer span {
 /* FEATURE TITLE */
 
 .widget.feature h2 {
-  display: inline-block;
   font-family:@font-swatch8-font-family;
   font-size:@font-swatch8-font-size;
   font-weight: @font-swatch8-font-weight;
@@ -434,15 +435,12 @@ footer.bk-footer span {
   letter-spacing: 1px;
   padding-bottom: 0;
   margin-bottom: 10px;
-  margin-left: 45%;
-  width: 45%;
-  text-align: left;
+  text-align: right;
 }
 
 /* FEATURE STRAPLINE */
 
 .widget.feature h3 {
-  display: inline-block;
   font-family:@font-swatch9-font-family;
   font-size:@font-swatch9-font-size;
   font-weight: @font-swatch9-font-weight;
@@ -450,9 +448,7 @@ footer.bk-footer span {
   color: @font-swatch9-color;
   letter-spacing: 1px;
   letter-spacing: @font-swatch9-letter-spacing;
-  margin-left: 45%;
-  width: 45%;
-  text-align: left;
+  text-align: right;
 }
 
 /* FEATURE BUTTON */

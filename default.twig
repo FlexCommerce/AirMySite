@@ -17,22 +17,6 @@
 <div class="main wrapper clearfix">
     {{zone('main')|raw}}
 </div>
-<footer class="bk-footer">
-    <div class="wrapper clearfix">
-        <div class="widget responsivecolumns columns-two-50-50">
-            <div class="column columns-two-left sz-foot-left">
-                {{widget('content', 'contactformheader', {"content":"<h1>Contact</h1>"})|raw}}
-                {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-                {{widget('contactform', 'contactform', {'text': 'Send','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
-            </div>
-            <div class="column columns-two-right sz-foot-right">
-                {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
-                {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
-                {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
-            </div>            
-        </div>            
-    </div>
-</footer>
 <section>
   <div class="copy-sz">
     <div class="wrapper clearfix f-socialicons">
