@@ -303,7 +303,6 @@ footer.bk-footer span {
 }
 
 .widget.extendednavigation ul {
-  float: left;
   margin: 0;
   padding: 0;
 }
@@ -320,13 +319,11 @@ footer.bk-footer span {
 
 .widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
 {
-  background-color: @color-swatch3;
   text-align: right;
 }
 
 .widget.extendednavigation ul li {
-  float: left;
-  display: block;
+  display: inline-block;
 }
 
 .widget.extendednavigation ul li.folder {
@@ -391,7 +388,7 @@ footer.bk-footer span {
 }
 
 .widget.extendednavigation li:hover > ul > li {
-  display: block;
+  display: inline-block;
   width: 100%;
   text-align: left!important;
   padding: 0;
@@ -415,7 +412,7 @@ footer.bk-footer span {
 
 .widget.feature .content {
   height: 500px;
-  text-align: center;
+  text-align: right;
 }
 
 .widget.feature .content .spare {
@@ -435,7 +432,6 @@ footer.bk-footer span {
   letter-spacing: 1px;
   padding-bottom: 0;
   margin-bottom: 10px;
-  text-align: right;
 }
 
 /* FEATURE STRAPLINE */
@@ -448,7 +444,6 @@ footer.bk-footer span {
   color: @font-swatch9-color;
   letter-spacing: 1px;
   letter-spacing: @font-swatch9-letter-spacing;
-  text-align: right;
 }
 
 /* FEATURE BUTTON */
@@ -1584,7 +1579,7 @@ hr.line.align-right {
     }
 
     .widget.extendednavigation ul li:hover > ul {
-        display: block!important;
+      display: block!important;
         width: 100%;
         border-top: 1px solid darken(@color-swatch3,15%);
         margin: 0;
