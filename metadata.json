@@ -1,6 +1,8 @@
 {
 	"name":"airmysite",
 	"thumbnail":"airmysite.png",
+  "templateType":"standard",
+  "pageTypes":["default","home"],
 	"screenshot":"airmysite.png",
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
